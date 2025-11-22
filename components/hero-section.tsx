@@ -89,8 +89,8 @@ export default function HeroSection() {
                     href="#link"
                     className="hover:bg-background dark:hover:border-t-border bg-muted group mx-auto flex w-fit items-center gap-4 rounded-full border p-1 pl-4 shadow-md shadow-zinc-950/5 transition-colors duration-300 dark:border-t-white/5 dark:shadow-zinc-950"
                   >
-                    <span className="text-foreground text-sm">
-                      Introducing Support for AI Models
+                    <span className="text-foreground text-xs sm:text-sm">
+                      Introducing Support for AI Powered Workflows
                     </span>
                     <span className="dark:border-background block h-4 w-0.5 border-l bg-white dark:bg-zinc-700"></span>
 
@@ -111,9 +111,9 @@ export default function HeroSection() {
                   preset="fade-in-blur"
                   speedSegment={0.3}
                   as="h1"
-                  className="mx-auto mt-8 max-w-4xl text-balance text-5xl max-md:font-semibold md:text-7xl lg:mt-16 xl:text-[5.25rem]"
+                  className="mx-auto mt-8 max-w-4xl text-balance text-4xl max-md:font-semibold md:text-6xl lg:mt-16 xl:text-[4.75rem]"
                 >
-                  Modern Solutions for Customer Engagement
+                  We Build Custom Software That Works
                 </TextEffect>
                 <TextEffect
                   per="line"
@@ -123,8 +123,9 @@ export default function HeroSection() {
                   as="p"
                   className="mx-auto mt-8 max-w-2xl text-balance text-lg"
                 >
-                  Highly customizable components for building modern websites
-                  and applications that look and feel the way you mean it.
+                  From automation to intelligent workflows—we build modern
+                  applications that help businesses stay faster, smarter, and
+                  competitive.
                 </TextEffect>
 
                 <AnimatedGroup
@@ -135,7 +136,6 @@ export default function HeroSection() {
                           staggerChildren: 0.05,
                           delayChildren: 0.75,
                         },
-                        
                       },
                     },
                     ...transitionVariants,

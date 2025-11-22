@@ -8,7 +8,7 @@ import Link from "next/link";
 
 export default function ContactSection() {
   return (
-    <section className="py-32">
+    <section id="contact" className="py-32">
       <div className="mx-auto max-w-4xl px-4 lg:px-0">
         <h1 className="mb-12 text-center text-4xl font-semibold lg:text-5xl">
           Contact Us

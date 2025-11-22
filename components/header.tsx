@@ -8,10 +8,10 @@ import { cn } from "@/lib/utils";
 import { IoVideocam } from "react-icons/io5";
 
 const menuItems = [
-  { name: "Testimonials", href: "#link" },
-  { name: "Pricing", href: "#link" },
-  { name: "Faqs", href: "#link" },
-  { name: "Contact Us", href: "#link" },
+  { name: "Testimonials", href: "#testimonials" },
+  { name: "Pricing", href: "#pricing" },
+  { name: "Faqs", href: "#faqs" },
+  { name: "Contact Us", href: "#contact" },
 ];
 
 export const HeroHeader = () => {
@@ -65,6 +65,16 @@ export const HeroHeader = () => {
                     <Link
                       href={item.href}
                       className="text-muted-foreground hover:text-accent-foreground block duration-150"
+                      onClick={(e) => {
+                        e.preventDefault();
+                        const element = document.querySelector(item.href);
+                        if (element) {
+                          element.scrollIntoView({
+                            behavior: "smooth",
+                            block: "start",
+                          });
+                        }
+                      }}
                     >
                       <span>{item.name}</span>
                     </Link>
@@ -81,6 +91,17 @@ export const HeroHeader = () => {
                       <Link
                         href={item.href}
                         className="text-muted-foreground hover:text-accent-foreground block duration-150"
+                        onClick={(e) => {
+                          e.preventDefault();
+                          const element = document.querySelector(item.href);
+                          if (element) {
+                            element.scrollIntoView({
+                              behavior: "smooth",
+                              block: "start",
+                            });
+                            setMenuState(false); // Close mobile menu after clicking
+                          }
+                        }}
                       >
                         <span>{item.name}</span>
                       </Link>
