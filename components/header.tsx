@@ -8,9 +8,9 @@ import { cn } from "@/lib/utils";
 import { IoVideocam } from "react-icons/io5";
 
 const menuItems = [
+  { name: "Projects", href: "#projects" },
   { name: "Testimonials", href: "#testimonials" },
   { name: "Pricing", href: "#pricing" },
-  { name: "Faqs", href: "#faqs" },
   { name: "Contact Us", href: "#contact" },
 ];
 

@@ -24,12 +24,12 @@ export default function ContactSection() {
               >
                 info@altreon.tech
               </Link>
-              <p className="mt-3 text-sm">+91 7667008758</p>
+              <p className="mt-3 text-sm">+91 9991725123</p>
             </div>
           </div>
           <div className="flex flex-col justify-between space-y-8 p-6 sm:p-12">
             <div>
-              <h3 className="mb-3 text-lg font-semibold">Sales Manager</h3>
+              <h3 className="mb-3 text-lg font-semibold">Project Manager</h3>
               <Link
                 href="mailto:press@tailus.io"
                 className="text-lg text-blue-600 hover:underline dark:text-blue-400"

@@ -6,6 +6,7 @@ import IntegrationsSection from "@/components/integrations-1";
 import { Logo } from "@/components/logo";
 import LogoCloud from "@/components/logo-cloud";
 import Pricing from "@/components/pricing";
+import Projects from "@/components/projects";
 import StatsSection from "@/components/stats";
 import WallOfLoveSection from "@/components/testimonials";
 export default function Home() {
@@ -13,6 +14,7 @@ export default function Home() {
     <>
       <HeroSection />
       <IntegrationsSection />
+      <Projects />
       <StatsSection />
       <WallOfLoveSection />
       <Pricing />

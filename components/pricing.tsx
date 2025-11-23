@@ -23,7 +23,7 @@ export default function Pricing() {
           </p>
         </div>
 
-        <div className="mt-8 grid gap-6 md:mt-20 md:grid-cols-3">
+        <div className="mt-8 grid gap-8 md:mt-20 md:grid-cols-3">
           {/* Static Site / MVP Plan */}
           <Card>
             <CardHeader>
@@ -76,7 +76,7 @@ export default function Pricing() {
               </CardDescription>
 
               <Button asChild className="mt-6 w-full">
-                <Link href="">Request Quote</Link>
+                <Link href="#contact">Request Quote</Link>
               </Button>
             </CardHeader>
 
