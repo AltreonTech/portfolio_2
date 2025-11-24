@@ -105,6 +105,7 @@ const IntegrationCard = ({
                 alt={title}
                 width={44}
                 height={44}
+                preload={true}
                 className="object-cover"
               />
             </div>

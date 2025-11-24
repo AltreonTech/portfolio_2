@@ -129,6 +129,7 @@ const Card3dDemo = ({ title, description, image, link }: props) => {
           className="aspect-video w-full rounded-md object-cover border"
           width="500"
           height="500"
+          preload={true}
         />
         <p>{description}</p>
         <div className="flex gap-3 border-t border-dashed pt-6">

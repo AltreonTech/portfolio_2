@@ -189,6 +189,7 @@ export default function HeroSection() {
                   <Image
                     className="bg-background aspect-15/8 relative hidden rounded-2xl dark:block"
                     src="/mail2.webp"
+                    preload={true}
                     alt="app screen"
                     width="2700"
                     height="1440"

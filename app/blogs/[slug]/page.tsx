@@ -58,7 +58,7 @@ export default async function BlogPage({ params }: BlogPageProps) {
                     alt={post.title}
                     fill
                     className="object-cover"
-                    priority
+                    preload={true}
                     sizes="(max-width: 768px) 100vw, (max-width: 1200px) 80vw, 1200px"
                   />
                 </div>
