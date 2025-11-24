@@ -134,9 +134,14 @@ export const HeroHeader = () => {
                   className={cn("lg:inline-flex cursor-pointer")}
                 >
                   <IoVideocam className="inline mr-1 size-4" />
-                  <span className="text-primary-foreground font-medium">
-                    Book a Call
-                  </span>
+                  <Link
+                    href="https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ1xMBKsWF2wJtkZvURpFo3yypaK82aAnF_gS3HrMeGQEsdRfMIdHbcQe4T9SQZ5JtBGamc4urMw"
+                    target="blank"
+                  >
+                    <span className="text-primary-foreground font-medium">
+                      Book a Call
+                    </span>
+                  </Link>
                 </Button>
               </div>
             </div>

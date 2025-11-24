@@ -1,0 +1,83 @@
+---
+title: "Event Management"
+date: "2024-11-20"
+excerpt: "An event management system built for registration, scheduling, ticketing, and attendee engagement — featuring real-time dashboards, custom event pages, and notifications to help organizers run seamless in-person or virtual events."
+author: "AltreonTech"
+tags: ["react", "patterns", "hooks", "advanced"]
+image: "/images/25293.jpg"
+---
+
+# Advanced React Patterns for Modern Applications
+
+As React applications grow in complexity, understanding advanced patterns becomes crucial for maintaining **clean**, **scalable**, and **maintainable** code.
+
+## Custom Hooks Pattern
+
+Custom hooks allow you to extract component logic into reusable functions:
+
+```jsx
+function useLocalStorage(key, initialValue) {
+  const [storedValue, setStoredValue] = useState(() => {
+    try {
+      const item = window.localStorage.getItem(key);
+      return item ? JSON.parse(item) : initialValue;
+    } catch (error) {
+      console.error(error);
+      return initialValue;
+    }
+  });
+
+  const setValue = (value) => {
+    try {
+      const valueToStore =
+        value instanceof Function ? value(storedValue) : value;
+      setStoredValue(valueToStore);
+      window.localStorage.setItem(key, JSON.stringify(valueToStore));
+    } catch (error) {
+      console.error(error);
+    }
+  };
+
+  return [storedValue, setValue];
+}
+```
+
+## Compound Components
+
+This pattern allows you to create flexible component APIs:
+
+```jsx
+function Card({ children }) {
+  return <div className="card">{children}</div>;
+}
+
+Card.Header = function CardHeader({ children }) {
+  return <div className="card-header">{children}</div>;
+};
+
+Card.Body = function CardBody({ children }) {
+  return <div className="card-body">{children}</div>;
+};
+
+Card.Footer = function CardFooter({ children }) {
+  return <div className="card-footer">{children}</div>;
+};
+```
+
+## Key Benefits
+
+- ✅ **Reusability**: Write once, use everywhere
+- ✅ **Maintainability**: Easier to update and debug
+- ✅ **Testability**: Isolated logic is easier to test
+- ✅ **Performance**: Better optimization opportunities
+
+## Best Practices
+
+1. **Start simple** - Don't over-engineer early
+2. **Extract gradually** - Refactor when patterns emerge
+3. **Document well** - Make patterns discoverable
+4. **Test thoroughly** - Ensure reliability
+
+> **Remember**: The best pattern is often the simplest one that solves your problem effectively.
+
+These patterns will help you build more robust React applications. Experiment with them in your next project!

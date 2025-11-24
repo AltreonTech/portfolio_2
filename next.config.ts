@@ -1,4 +1,5 @@
 import type { NextConfig } from "next";
+import createMDX from "@next/mdx";
 
 const nextConfig: NextConfig = {
   /* config options here */
@@ -8,8 +9,17 @@ const nextConfig: NextConfig = {
         hostname: "ik.imagekit.io",
         protocol: "https",
       },
+      {
+        hostname: "via.placeholder.com",
+        protocol: "https",
+      },
     ],
   },
+  pageExtensions: ["js", "jsx", "md", "mdx", "ts", "tsx"],
 };
 
-export default nextConfig;
+const withMDX = createMDX({
+  // Configured in mdx-components.tsx
+});
+
+export default withMDX(nextConfig);

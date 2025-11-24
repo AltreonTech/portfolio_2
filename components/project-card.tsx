@@ -6,6 +6,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "./ui/button";
 import Link from "next/link";
 import { ChevronRight } from "lucide-react";
+import Image from "next/image";
 
 interface CardTransform {
   rotateX: number;
@@ -121,13 +122,13 @@ const Card3dDemo = ({ title, description, image, link }: props) => {
         <CardTitle>{title}</CardTitle>
       </CardHeader>
       <CardContent className="space-y-6 text-sm">
-        <img
+        <Image
           ref={imageRef}
-          src={image}
+          src={image ? image : "https://via.placeholder.com/500"}
           alt="Project_Image"
           className="aspect-video w-full rounded-md object-cover border"
-          width={500}
-          height={500}
+          width="500"
+          height="500"
         />
         <p>{description}</p>
         <div className="flex gap-3 border-t border-dashed pt-6">
