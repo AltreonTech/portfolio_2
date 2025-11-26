@@ -52,14 +52,14 @@ export default async function BlogPage({ params }: BlogPageProps) {
             <article className="space-y-6">
               {/* Hero Image */}
               {post.image && (
-                <div className="relative h-64 md:h-96 w-full rounded-lg overflow-hidden">
+                <div className="relative w-full aspect-[16/9] overflow-hidden flex items-start">
                   <Image
                     src={post.image}
                     alt={post.title}
-                    fill
-                    className="object-cover"
-                    preload={true}
-                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 80vw, 1200px"
+                    width={1536}
+                    height={1024}
+                    className="h-full w-auto object-left rounded-xl"
+                    preload
                   />
                 </div>
               )}

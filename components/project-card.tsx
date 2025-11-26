@@ -121,31 +121,31 @@ const Card3dDemo = ({ title, description, image, link }: props) => {
       <CardHeader>
         <CardTitle>{title}</CardTitle>
       </CardHeader>
-      <CardContent className="space-y-6 text-sm">
-        <Image
-          ref={imageRef}
-          src={image ? image : "https://via.placeholder.com/500"}
-          alt="Project_Image"
-          className="aspect-video w-full rounded-md object-cover border"
-          width="500"
-          height="500"
-          preload={true}
-        />
-        <p>{description}</p>
-        <div className="flex gap-3 border-t border-dashed pt-6">
-          <Button
-            asChild
-            variant="default"
-            size="sm"
-            className="gap-1 pr-2 shadow-none hover:scale-105"
-          >
-            <Link href={link || ""}>
-              Learn More
-              <ChevronRight className="ml-0 !size-3.5 opacity-50" />
-            </Link>
-          </Button>
-        </div>
-      </CardContent>
+      <CardContent className="flex flex-col flex-1 space-y-6 text-sm">
+    <Image
+      ref={imageRef}
+      src={image ? image : "https://via.placeholder.com/500"}
+      alt="Project_Image"
+      className="object-cover object-center rounded-md"
+      width={500}
+      height={500}
+      preload={true}
+    />
+    <p className="line-clamp-5">{description}</p>
+    <div className="mt-auto flex gap-3 border-t border-dashed pt-6">
+      <Button
+        asChild
+        variant="default"
+        size="sm"
+        className="gap-1 pr-2 shadow-none hover:scale-105"
+      >
+        <Link href={link || ""}>
+          Learn More
+          <ChevronRight className="ml-0 !size-3.5 opacity-50" />
+        </Link>
+      </Button>
+    </div>
+  </CardContent>
     </Card>
   );
 };
