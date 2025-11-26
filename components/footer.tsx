@@ -34,7 +34,7 @@ export default function FooterSection() {
     <footer className="py-16 md:py-32">
       <div className="mx-auto max-w-5xl px-6">
         <Link href="/" aria-label="go home" className="mx-auto block size-fit">
-          <Logo />
+          <span className="font-semibold text-xl text-white">Altreon</span>
         </Link>
 
         <div className="my-8 flex flex-wrap justify-center gap-6 text-sm">
