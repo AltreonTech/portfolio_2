@@ -16,10 +16,6 @@ export default function ContactSection() {
   const templateId = process.env.NEXT_PUBLIC_TEMPLATE_ID || "";
   const publicKey = process.env.NEXT_PUBLIC_PUBLIC_KEY || "";
 
-  useEffect(() => {
-    console.log(serviceId, templateId, publicKey);
-  }, [serviceId, templateId, publicKey]);
-
   const sendEmail = (e: React.FormEvent) => {
     e.preventDefault();
 
@@ -33,13 +29,11 @@ export default function ContactSection() {
         publicKey: publicKey,
       })
       .then(
-        (response) => {
-          console.log("SUCCESS!", response.status, response.text);
+        () => {
           setSubmitStatus("Message sent successfully!");
           formRef.current?.reset();
         },
-        (error) => {
-          console.log("FAILED...", error);
+        () => {
           setSubmitStatus("Failed to send message. Please try again.");
         }
       )
