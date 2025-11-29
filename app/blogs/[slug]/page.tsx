@@ -59,7 +59,7 @@ export default async function BlogPage({ params }: BlogPageProps) {
                     width={1536}
                     height={1024}
                     className="h-full w-auto object-left rounded-xl"
-                    preload
+                    preload={true}
                   />
                 </div>
               )}

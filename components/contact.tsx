@@ -130,7 +130,11 @@ export default function ContactSection() {
                 </Label>
                 <Textarea id="msg" name="message" rows={3} />
               </div>
-              <Button type="submit" disabled={isSubmitting}>
+              <Button
+                type="submit"
+                disabled={isSubmitting}
+                className="cursor-pointer"
+              >
                 {isSubmitting ? "Sending..." : "Submit"}
               </Button>
             </div>

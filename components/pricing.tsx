@@ -35,7 +35,7 @@ export default function Pricing() {
                 One-time delivery
               </CardDescription>
               <Button asChild variant="outline" className="mt-4 w-full">
-                <Link href="">Request Quote</Link>
+                <Link href="#contact">Request Quote</Link>
               </Button>
             </CardHeader>
 
@@ -118,8 +118,13 @@ export default function Pricing() {
                 Ongoing support
               </CardDescription>
 
-              <Button asChild variant="outline" className="mt-4 w-full">
-                <Link href="">Request Quote</Link>
+              <Button
+                asChild
+                variant="outline"
+                className="mt-4 w-full"
+                disabled
+              >
+                <Link href="#contact">Request Quote</Link>
               </Button>
             </CardHeader>
 
