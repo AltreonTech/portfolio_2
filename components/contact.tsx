@@ -59,7 +59,7 @@ export default function ContactSection() {
               >
                 info@altreon.tech
               </Link>
-              <p className="mt-3 text-sm">+91 9991725123</p>
+              <p className="mt-3 text-sm">+91 9992932517</p>
             </div>
           </div>
           <div className="flex flex-col justify-between space-y-8 p-6 sm:p-12">
@@ -71,7 +71,7 @@ export default function ContactSection() {
               >
                 vishal.panchal@altreon.tech
               </Link>
-              <p className="mt-3 text-sm">+91 7988256361</p>
+              <p className="mt-3 text-sm">+91 9992932517</p>
             </div>
           </div>
         </div>

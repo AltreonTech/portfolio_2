@@ -14,7 +14,7 @@ export default function Projects() {
           </p>
         </div>
       </div>
-      <div className="grid gap-6 grid-cols-1 md:grid-cols-3 mx-auto max-w-6xl px-6 mt-16">
+      <div className="grid gap-6 grid-cols-1 md:grid-cols-3 md:justify-center mx-auto max-w-6xl px-6 mt-16">
         {blogs.map((blog, index) => (
           <Card3dDemo
             title={blog.title}

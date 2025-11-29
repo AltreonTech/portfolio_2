@@ -60,7 +60,7 @@ export default function FooterSection() {
         </div>
         <div className="my-8 flex flex-wrap justify-center gap-6 text-sm">
           <Link
-            href="#"
+            href="https://x.com/AltreonTech"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="X/Twitter"
@@ -80,7 +80,7 @@ export default function FooterSection() {
             </svg>
           </Link>
           <Link
-            href="#"
+            href="https://www.linkedin.com/in/altreon-tech-0112a2395/"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="LinkedIn"
@@ -120,7 +120,7 @@ export default function FooterSection() {
             </svg>
           </Link>
           <Link
-            href="#"
+            href="https://www.instagram.com/altreon_tech/"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Instagram"
@@ -142,7 +142,7 @@ export default function FooterSection() {
         </div>
         <span className="text-muted-foreground block text-center text-sm">
           {" "}
-          © {new Date().getFullYear()} Tailark, All rights reserved
+          © {new Date().getFullYear()} AltreonTech, All rights reserved
         </span>
       </div>
     </footer>

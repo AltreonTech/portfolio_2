@@ -8,10 +8,10 @@ import { cn } from "@/lib/utils";
 import { IoVideocam } from "react-icons/io5";
 
 const menuItems = [
-  { name: "Projects", href: "#projects" },
-  { name: "Testimonials", href: "#testimonials" },
-  { name: "Pricing", href: "#pricing" },
-  { name: "Contact Us", href: "#contact" },
+  { name: "Projects", href: "/#projects" },
+  { name: "Testimonials", href: "/#testimonials" },
+  { name: "Pricing", href: "/#pricing" },
+  { name: "Contact Us", href: "/#contact" },
 ];
 
 export const HeroHeader = () => {
@@ -68,14 +68,22 @@ export const HeroHeader = () => {
                       href={item.href}
                       className="text-muted-foreground hover:text-accent-foreground block duration-150"
                       onClick={(e) => {
-                        e.preventDefault();
-                        const element = document.querySelector(item.href);
-                        if (element) {
-                          element.scrollIntoView({
-                            behavior: "smooth",
-                            block: "start",
-                          });
+                        // If we're already on the home page, prevent default and smooth scroll
+                        if (window.location.pathname === "/") {
+                          e.preventDefault();
+                          const element = document.querySelector(
+                            item.href.split("#")[1]
+                              ? "#" + item.href.split("#")[1]
+                              : item.href
+                          );
+                          if (element) {
+                            element.scrollIntoView({
+                              behavior: "smooth",
+                              block: "start",
+                            });
+                          }
                         }
+                        // If we're on a different page, let Next.js handle the navigation normally
                       }}
                     >
                       <span>{item.name}</span>
@@ -94,15 +102,23 @@ export const HeroHeader = () => {
                         href={item.href}
                         className="text-muted-foreground hover:text-accent-foreground block duration-150"
                         onClick={(e) => {
-                          e.preventDefault();
-                          const element = document.querySelector(item.href);
-                          if (element) {
-                            element.scrollIntoView({
-                              behavior: "smooth",
-                              block: "start",
-                            });
-                            setMenuState(false); // Close mobile menu after clicking
+                          // If we're already on the home page, prevent default and smooth scroll
+                          if (window.location.pathname === "/") {
+                            e.preventDefault();
+                            const element = document.querySelector(
+                              item.href.split("#")[1]
+                                ? "#" + item.href.split("#")[1]
+                                : item.href
+                            );
+                            if (element) {
+                              element.scrollIntoView({
+                                behavior: "smooth",
+                                block: "start",
+                              });
+                            }
                           }
+                          // Close mobile menu
+                          setMenuState(false);
                         }}
                       >
                         <span>{item.name}</span>
