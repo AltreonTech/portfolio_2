@@ -67,7 +67,17 @@ export default function FAQsThree() {
               <p className="text-muted-foreground mt-4">
                 Can't find what you're looking for? Contact our{" "}
                 <Link
-                  href="#"
+                  href="#contact"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    const element = document.querySelector("#contact");
+                    if (element) {
+                      element.scrollIntoView({
+                        behavior: "smooth",
+                        block: "start",
+                      });
+                    }
+                  }}
                   className="text-primary font-medium hover:underline"
                 >
                   customer support team
