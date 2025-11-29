@@ -45,7 +45,7 @@ export const HeroHeader = () => {
                 aria-label="home"
                 className="flex items-center space-x-2"
               >
-                <span className="font-semibold text-xl text-white">
+                <span className="font-semibold text-xl text-foreground">
                   Altreon
                 </span>
               </Link>
