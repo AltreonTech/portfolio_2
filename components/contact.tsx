@@ -54,7 +54,7 @@ export default function ContactSection() {
             <div>
               <h2 className="mb-3 text-lg font-semibold">Office Contact</h2>
               <Link
-                href="mailto:hello@tailus.io"
+                href="mailto:info@altreon.tech"
                 className="text-lg text-blue-600 hover:underline dark:text-blue-400"
               >
                 info@altreon.tech
@@ -66,7 +66,7 @@ export default function ContactSection() {
             <div>
               <h3 className="mb-3 text-lg font-semibold">Project Manager</h3>
               <Link
-                href="mailto:press@tailus.io"
+                href="mailto:vishal.panchal@altreon.tech"
                 className="text-lg text-blue-600 hover:underline dark:text-blue-400"
               >
                 vishal.panchal@altreon.tech
