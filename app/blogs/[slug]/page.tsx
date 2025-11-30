@@ -52,7 +52,7 @@ export default async function BlogPage({ params }: BlogPageProps) {
             <article className="space-y-6">
               {/* Hero Image */}
               {post.image && (
-                <div className="relative w-full aspect-[16/9] overflow-hidden flex items-start">
+                <div className="relative w-full flex justify-center aspect-[16/9] overflow-hidden flex items-start">
                   <Image
                     src={post.image}
                     alt={post.title}

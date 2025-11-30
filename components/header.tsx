@@ -153,7 +153,7 @@ export const HeroHeader = () => {
                 >
                   <IoVideocam className="inline mr-1 size-4" />
                   <Link
-                    href="https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ1xMBKsWF2wJtkZvURpFo3yypaK82aAnF_gS3HrMeGQEsdRfMIdHbcQe4T9SQZ5JtBGamc4urMw"
+                    href="https://calendar.app.google/qtT43PFug6tRbELLA"
                     target="blank"
                   >
                     <span className="text-primary-foreground font-medium">
