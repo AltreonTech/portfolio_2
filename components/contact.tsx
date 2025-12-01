@@ -69,7 +69,7 @@ export default function ContactSection() {
                 href="mailto:vishal.panchal@altreon.tech"
                 className="text-lg text-blue-600 hover:underline dark:text-blue-400"
               >
-                vishal.panchal@altreon.tech
+                contact.altreontech@gmail.com
               </Link>
               <p className="mt-3 text-sm">+91 9992932517</p>
             </div>
