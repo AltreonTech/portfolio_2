@@ -66,7 +66,7 @@ export default function ContactSection() {
             <div>
               <h3 className="mb-3 text-lg font-semibold">Project Manager</h3>
               <Link
-                href="mailto:vishal.panchal@altreon.tech"
+                href="mailto:contact.altreontech@gmail.com"
                 className="text-lg text-blue-600 hover:underline dark:text-blue-400"
               >
                 contact.altreontech@gmail.com
