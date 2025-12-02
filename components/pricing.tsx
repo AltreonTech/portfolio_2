@@ -131,6 +131,8 @@ export default function Pricing() {
             <CardContent className="space-y-4">
               <hr className="border-dashed" />
 
+              
+
               <ul className="list-outside space-y-3 text-sm">
                 {[
                   "Regular Updates & Bug Fixes",
