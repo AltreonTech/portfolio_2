@@ -69,7 +69,7 @@ export default function Pricing() {
                 Fullstack Development
               </CardTitle>
 
-              <span className="my-4 block text-3xl font-bold">$2,499</span>
+              <span className="my-4 block text-3xl font-bold">$1,999</span>
 
               <CardDescription className="text-sm text-muted-foreground">
                 Complete custom web application with full-stack capabilities
@@ -139,8 +139,8 @@ export default function Pricing() {
                   "Security Audits",
                   "Scalable Cloud Hosting",
                   "Custom Feature Enhancements",
-                  "Dedicated Account Manager",
                   "Monthly Reporting & Analytics",
+                  "Full Dedicated Developer 24*7",
                 ].map((item, index) => (
                   <li key={index} className="flex items-center gap-2">
                     <Check className="size-3" />

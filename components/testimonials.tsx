@@ -10,51 +10,51 @@ type Testimonial = {
 
 const testimonials: Testimonial[] = [
   {
-    name: "Jonathan Yombo",
-    role: "CTO, FinTech Startup",
-    image: "https://randomuser.me/api/portraits/men/1.jpg",
+    name: "Rajesh Ahuja",
+    role: "MD, Cermaic Premiers Ltd",
+    image: "/images/test-men1.jpg",
     quote:
       "Altreon delivered exactly what we needed. Their team understood our requirements and built a solution that scaled with our business.",
   },
   {
     name: "Yves Kalume",
-    role: "Founder, E-Commerce Platform",
+    role: "Manager, E-Commerce Platform",
     image: "https://randomuser.me/api/portraits/men/6.jpg",
     quote:
       "Working with Altreon was seamless. They turned our idea into a fully functional platform quickly and efficiently.",
   },
   {
-    name: "Yucel Faruksahan",
-    role: "Product Manager, SaaS Company",
-    image: "https://randomuser.me/api/portraits/men/7.jpg",
+    name: "Md. Fukraann",
+    role: "Sales Head, Lahauri Bakery",
+    image: "/images/test-men3.jpg",
     quote:
       "The custom solution Altreon built for us has transformed how we operate daily. The quality and attention to detail are exceptional.",
   },
   {
-    name: "Anonymous Client",
-    role: "CEO, Tech Startup",
+    name: "David Ochelang",
+    role: "Founder, Banana Chips",
     image: "https://randomuser.me/api/portraits/men/8.jpg",
     quote:
-      "We had very specific requirements for our software. Altreon guided us through the process and delivered a solution that exceeded expectations.",
+      "We had very specific requirements for our MVP. Altreon guided us through the process and delivered a solution that exceeded expectations.",
   },
   {
     name: "Shekinah Tshiokufila",
-    role: "Lead Engineer, Logistics Platform",
-    image: "https://randomuser.me/api/portraits/men/4.jpg",
+    role: "Engineer, Logistics Platform",
+    image: "/images/test-women6.jpg",
     quote:
       "Altreon made complex software development look easy. Their professionalism and expertise helped us launch faster than we imagined.",
   },
   {
-    name: "Oketa Fred",
+    name: "Jenneh Fred",
     role: "Fullstack Developer, HealthTech",
     image: "https://randomuser.me/api/portraits/men/2.jpg",
     quote:
       "The Altreon team is incredible. Their components and architecture choices made building our platform efficient and robust.",
   },
   {
-    name: "Zeki",
+    name: "SHeik Munyua",
     role: "Founder, AI Startup",
-    image: "https://randomuser.me/api/portraits/men/5.jpg",
+    image: "/images/test-men5.jpeg",
     quote:
       "Altreon’s solutions empowered our team to focus on innovation rather than infrastructure. Their software is scalable and reliable.",
   },
@@ -66,32 +66,32 @@ const testimonials: Testimonial[] = [
       "Working with Altreon transformed our development workflow. Their team is professional, responsive, and their solutions are top-notch.",
   },
   {
-    name: "Khatab Wedaa",
+    name: "Mani Thapa",
     role: "Founder, SaaS Platform",
-    image: "https://randomuser.me/api/portraits/men/10.jpg",
+    image: "/images/test-girl4.jpg",
     quote:
       "Altreon delivered elegant, maintainable software that helped us launch our platform faster than we expected.",
   },
   {
-    name: "Rodrigo Aguilar",
+    name: "Vyashi Arula",
     role: "Product Owner, Mobile App",
-    image: "https://randomuser.me/api/portraits/men/11.jpg",
+    image: "/images/test-gril2.jpg",
     quote:
       "Altreon made the entire development process smooth and stress-free. Their solutions are practical, reliable, and scalable.",
   },
   {
-    name: "Eric Ampire",
-    role: "Software Architect, Enterprise Solutions",
-    image: "https://randomuser.me/api/portraits/men/12.jpg",
+    name: "jehn doude",
+    role: "Project Head, Driving School",
+    image: "https://randomuser.me/api/portraits/women/9.jpg",
     quote:
-      "Altreon’s templates and custom solutions allowed us to deliver a polished product to our clients quickly. Highly recommend their expertise.",
+      "Working with Altreon made our development process smooth and stress-free. Their practical and reliable solutions helped us scale quickly.",
   },
   {
-    name: "Roland Tubonge",
-    role: "CEO, Startup Incubator",
-    image: "https://randomuser.me/api/portraits/men/13.jpg",
+    name: "PiKChau Bror",
+    role: "CTO, Cosmetics Brand",
+    image: "https://randomuser.me/api/portraits/women/19.jpg",
     quote:
-      "Even with complex requirements, Altreon delivered a solution that worked flawlessly. Their team is professional, skilled, and reliable.",
+      "Altreon simplified a complex project and delivered practical, scalable solutions that improved our launch timeline and overall stability.",
   },
 ];
 
